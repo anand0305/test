@@ -1,0 +1,14 @@
+---
+applications:
+- name: acq-api
+  instances: 1
+  health-check-type: none
+  host: acq-api
+  path: target/acq-api-0.0.1-SNAPSHOT.jar
+  buildpack: java_buildpack_offline
+  health-check-type: none
+services:
+  - acq-api-db
+
+
+
